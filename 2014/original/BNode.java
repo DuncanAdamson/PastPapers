@@ -11,5 +11,5 @@ public class BNode {
 	public BNode getLeft(){return left;}
 	public BNode getRight(){return right;}
 	public void setLeft(BNode nd){left = nd;}
-	public void serRight(BNode nd){right = nd;}
+	public void setRight(BNode nd){right = nd;}
 	}

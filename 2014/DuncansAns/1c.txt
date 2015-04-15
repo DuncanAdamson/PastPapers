@@ -1,0 +1,12 @@
+		36
+	24		40
+11		26		58
+   13			     48
+
+delete(Node n){
+	0) set node to n
+	1) if n has child
+	1,1) find smallest node in right tree called swapnode
+	1,2) switch n and swapnode in tree
+	2) get parent of node, change refernce to node to null
+}

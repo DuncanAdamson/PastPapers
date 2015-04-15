@@ -1,0 +1,28 @@
+4)a)
+int max = 0;
+for (int i = 0; i < upb + 1;i ++){
+	if (s[i] > s[max]) max = i;
+}
+return max;
+
+b)
+ArrayList<Integer> sorted = new ArrayList<Integer>();
+ArrayList<Integer> orginal = new ArrayList<Integer>(s);
+int n = s.length;
+for(int i = 0;i < n;i ++){
+	 sorted.add(locateMax(S.toArray(),S.size()));
+}
+return sorted.toArray();
+
+c)
+
+ArrayList<Integer> sorted = new ArrayList<Integer>();  // n
+ArrayList<Integer> orginal = new ArrayList<Integer>(s);// n
+int n = s.length;                                      // 1
+for(int i = 0;i < n;i ++){                             // n
+	 sorted.add(locateMax(S.toArray(),S.size()));  // n(n-1)
+}                                                      //
+return sorted.toArray();                               // 1
+
+total n + n + 1 + n + n^2 - n + 1 = n^2 + 2n + 2
+=> complexity of O(n^2)

@@ -1,0 +1,2 @@
+1)a) function f randomly organises a list of strings. A more approirate name would be Random_Order
+b) O(n) as the list is only ever ittereated on once at a time

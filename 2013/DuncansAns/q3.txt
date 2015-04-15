@@ -1,0 +1,37 @@
+a)
+       30
+  24        40
+11    26   36 58
+  13
+b)
+preorder: 30,24,11,13,26,40,36,58
+in: 11,13,24,26,30,36,40,58
+postorder: 13,11,26,24,36,58,40,30
+c)
+       36
+  24       40
+11   26      58
+  13
+
+delete(node n)
+1) node todelete = n
+2) if n has rightchild
+2)1) todelete = n.rightchild
+2)2) while todelete has leftchild
+2)2)1)   todelete = todelete.leftchild
+3) else if n has leftchild
+3)1) todelete = leftchild
+3)2) while todelete has rightchild
+3)2)1) todelete = todelete.leftchild
+4) else todelete = null
+5) if todelete > todelete.parenent
+5)1) todelete.parent.rightchild = null
+6) else
+6)1) todelete.parent.leftchild = null
+
+d)
+maxium = 1023
+min = 10
+the hieght of the tree is the distance between the root and the furthest node from it
+e) An AVL tree is a self balancing tree which attmpts to keep the hight no more than log(n) by keeping both branches the same lentgh or no more than 1 different for each node. This prevents the worst case sencario by stopping it being anymore than log(n) in hieght.
+f) Both of them could be AVL Trees as niether side is more then Log(n) in hieght.

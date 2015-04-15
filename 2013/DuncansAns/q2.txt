@@ -1,0 +1,4 @@
+addFront: O(1)
+equals: O(n)
+isPresent: O(n)
+intersection: O(n^2)

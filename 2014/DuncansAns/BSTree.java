@@ -19,5 +19,10 @@ public class BSTree {
 		// Ignores nd.getItem == e as specified
 	}
 	public boolean isPresent(int e){return root != null && isPresent(e,root);}
-	private static boolean isPresent(int e,BNode nd){return false;}
+	private static boolean isPresent(int e,BNode nd){
+	if (nd.getItem() == e) {return true;}
+	else if (e > nd.getItem() && nd.getRight() != null) {return isPresent(e,nd.getRight());}
+	else if (e < nd.getItem() && nd.getLeft() != null) {return isPresent(e,nd.getLeft());}
+	return false;
+	}
 }

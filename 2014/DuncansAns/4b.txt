@@ -1,0 +1,16 @@
+remove(8)
+key = hash(8)
+bucket[key] != 8
+bucket[key + 1] == 8
+bucket[key + 1] = null
+
+get(64)
+key = hash(64)
+bucket[key] == 64
+return true
+
+get(15)
+key = hash(15)
+bucket[key] == 216
+bucket [key] == null
+return false

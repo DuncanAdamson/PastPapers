@@ -1,0 +1,2 @@
+filter1 : O(n) only ever goes over the data set lineraly 
+filter2 : O(n) only ever goes over the data set lineraly

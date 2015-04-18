@@ -1,0 +1,22 @@
+c) Best case O(nlogn) as is must go over the complete data set at least once to check every value, as well as search the tree to confrim, which has complexity log(n) in the best case. Worst case O(n^2), when it must go through the entirety of the tree to confirm each value. To ensure the best case, the tree should be ballanced, or an AVLTree.
+
+d)(Not asked to write insert for BSTree, assuming we only insert if it doesn't exist)
+t1
+    4
+  2   6
+1  3 5 7
+t2
+    1
+     2
+      7
+     6
+    3
+     4
+      5
+height t1: 3
+height t2: 7
+preorder t1: 4,2,1,3,6,5,7
+postorder t1: 1,3,2,5,7,6,4
+preorder t2: 1,2,7,6,3,4,5
+postorder t2: 5,4,3,6,7,2,1
+

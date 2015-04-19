@@ -1,0 +1,3 @@
+b)
+Advantage of linked list: Easy to grow dynamically,doesn't need capacity
+Advantage of one diemensional array: Takes up less memory, easy to find size

@@ -1,3 +1,3 @@
-filter1 : O(n^2) itterating across the list is order n, as it calls the remove function, which is also order n, whilst going over the list, the order is n^2.
+filter1 : O(n^2) iterating across the list is order n, and it calls the remove function, which is also order n, whilst going over the list, so the order is n^2.
 note that the fact that it goes over the list on two seperate occaions does not impact the complexity of the code.
 filter2 : O(n) only ever goes over the data set lineraly

@@ -26,4 +26,4 @@ sort by next least significant
 add to a list
 s = [14,17,18,28,29,31,39,69,81,89]
 As we've reached the most significant digit, we find the list is now sorted.
-Radix sort has complexity O(n.d) where n is the size of the data set, and d is the amount of digits in the largest number. This comes from having to go over each if the n items d times.
+Radix sort has complexity O(n.d) where n is the size of the data set, and d is the amount of digits in the largest number. This comes from having to go over each of the n items d times.

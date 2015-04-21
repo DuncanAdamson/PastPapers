@@ -1,4 +1,4 @@
-c) Best case O(nlogn) as is must go over the complete data set at least once to check every value, as well as search the tree to confrim, which has complexity log(n) in the best case. Worst case O(n^2), when it must go through the entirety of the tree to confirm each value. To ensure the best case, the tree should be ballanced, or an AVLTree.
+c) Best case O(nlogn) as is must go over the complete data set at least once to check every value, as well as search the tree to confirm, which has complexity log(n) in the best case. Worst case O(n^2), when it must go through the entirety of the tree to confirm each value. To ensure the best case, the tree should be balanced, or an AVL Tree.
 
 d)(Not asked to write insert for BSTree, assuming we only insert if it doesn't exist)
 t1

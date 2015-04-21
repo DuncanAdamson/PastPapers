@@ -30,8 +30,8 @@ delete(node n)
 6)1) todelete.parent.leftchild = null
 
 d)
-maxium = 1023
-min = 10
-the hieght of the tree is the distance between the root and the furthest node from it
-e) An AVL tree is a self balancing tree which attmpts to keep the hight no more than log(n) by keeping both branches the same lentgh or no more than 1 different for each node. This prevents the worst case sencario by stopping it being anymore than log(n) in hieght.
-f) Both of them could be AVL Trees as niether side is more then Log(n) in hieght.
+maximum = 1023
+minimum = 10
+the height of the tree is the distance between the root and the furthest node from it
+e) An AVL tree is a self balancing tree which attmpts to keep the height no more than log(n) by keeping both branches the same length or no more than 1 different for each node. This prevents the worst case scenario by stopping it being anymore than log(n) in height.
+f) Both of them could be AVL Trees as neither side is more than Log(n) in height.

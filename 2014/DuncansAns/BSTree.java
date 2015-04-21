@@ -9,11 +9,11 @@ public class BSTree {
 	}
 	private static void insert(int e,BNode nd){
 		if (e > nd.getItem()){
-			if (nd.getRight() != null) {nd.setRight(new BNode(e,null,null));}
+			if (nd.getRight() == null) {nd.setRight(new BNode(e,null,null));}
 			else {insert(e,nd.getRight());}
 		}
 		else if (e < nd.getItem()){
-			if (nd.getLeft() != null) {nd.setLeft(new BNode(e,null,null));}
+			if (nd.getLeft() == null) {nd.setLeft(new BNode(e,null,null));}
 			else {insert(e,nd.getLeft());}
 		}
 		// Ignores nd.getItem == e as specified

@@ -29,7 +29,8 @@ public class BSTree {
 		return subsumed(root,t);
 	}
 	public boolean subsumed(BNode bn, BSTree t){
-		if(bn == null) return false;
+		if(t == null & bn != null) return false;
+		if(bn == null) return true; // Waiting for it to reach the end of each node
 		return t.isPresent(bn.getItem()) && subsumed(bn.getLeft(),t) && subsumed(bn.getRight(),t);
 		
 	}

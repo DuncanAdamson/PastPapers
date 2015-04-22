@@ -34,4 +34,4 @@ maximum = 1023
 minimum = 10
 the height of the tree is the distance between the root and the furthest node from it
 e) An AVL tree is a self balancing tree which attmpts to keep the height no more than log(n) by keeping both branches the same length or no more than 1 different for each node. This prevents the worst case scenario by stopping it being anymore than log(n) in height.
-f) Both of them could be AVL Trees as neither side is more than Log(n) in height.
+f)Niether of these are avl trees as the height of both is three, which is greater then log(n), where n is the size of the data set, in this case 7.

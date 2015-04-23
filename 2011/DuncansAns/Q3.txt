@@ -5,6 +5,6 @@ find:	Linked list O(n) as it's unsorted, it would have to compare every element 
 size:	Linked list O(n) Linked lists give no indication of the size of the data set, therefore would have to iterate across the whole thing.
 	Array O(1) arrays store their length, therefore simply have to retrieve that value.
 remove:	Linked list O(n) once found, it doesn't have to access the data set again.
-	Array O(log(n)) once found, removing can be done without accessing the dataset.
+	Array O(n), same as linked list
 	
 

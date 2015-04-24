@@ -31,7 +31,7 @@ delete(node n)
 
 d)
 maximum = 1022
-minimum = 10
+minimum = 9
 To get the maxium height, the data set could be inserted in order (ie. assecnding or descending).
 the height of the tree is the distance between the root and the furthest node from it.
 e) An AVL tree is a self balancing tree which attempts to keep the height no more than log(n) by keeping both branches the same length or no more than 1 different for each node. This prevents the worst case scenario by stopping it being anymore than log(n) in height.

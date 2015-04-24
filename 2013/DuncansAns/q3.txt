@@ -30,8 +30,8 @@ delete(node n)
 6)1) todelete.parent.leftchild = null
 
 d)
-maximum = 1022
-minimum = 9
+maximum = 1022 (the hieght of the tree starts at -1 for an empty tree, 0 for the root node 1 for the first children node etc.)
+minimum = 9 (log(n + 1) - 1)
 To get the maxium height, the data set could be inserted in order (ie. assecnding or descending).
 the height of the tree is the distance between the root and the furthest node from it.
 e) An AVL tree is a self balancing tree which attempts to keep the height no more than log(n) by keeping both branches the same length or no more than 1 different for each node. This prevents the worst case scenario by stopping it being anymore than log(n) in height.

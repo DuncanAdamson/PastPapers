@@ -18,7 +18,7 @@ delete(node n)
 2) if n has rightchild
 2)1) todelete = n.rightchild
 2)2) while todelete has leftchild
-2)2)1)   todelete = todelete.leftchild
+2)2)1)   todelete = todelete.rightchild
 3) else if n has leftchild
 3)1) todelete = leftchild
 3)2) while todelete has rightchild

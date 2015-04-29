@@ -1,16 +1,22 @@
 a)
        30
-  24        40
-11    26   36 58
-  13
+`    /    \
+  24       40
+  /  \     /  \
+11    26  36   58
+  \
+   13
 b)
 preorder: 30,24,11,13,26,40,36,58
 in: 11,13,24,26,30,36,40,58
 postorder: 13,11,26,24,36,58,40,30
 c)
        36
+     /    \
   24       40
+ /  \        \
 11   26      58
+ \
   13
 
 delete(node n)
@@ -34,5 +40,7 @@ maximum = 1022 (the hieght of the tree starts at -1 for an empty tree, 0 for the
 minimum = 9 (log(n + 1) - 1)
 To get the maxium height, the data set could be inserted in order (ie. assecnding or descending).
 the height of the tree is the distance between the root and the furthest node from it.
-e) An AVL tree is a self balancing tree which attempts to keep the height no more than log(n) by keeping both branches the same length or no more than 1 different for each node. This prevents the worst case scenario by stopping it being anymore than log(n) in height.
-f) The first tree is not AVL as the left subtree has height 3 while the height of the right subtree is 1, therefore it's not balanced.  The second tree is as the difference in height between the two subtrees is only 1
+e) An AVL tree is a blanced tree which keeps the subtrees from having a hieght difference of no more than one.
+It does this by rotating the tree whenever the height differnce exceeds one.
+f) The first tree is not AVL as the left subtree has height 3 while the height of the right subtree is 1, therefore it's not balanced.
+The second tree is as the difference in height between the two subtrees is only 1

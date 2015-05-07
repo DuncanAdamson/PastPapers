@@ -3,10 +3,10 @@ b)
    ________________________       ____________________
   |Floor_Plan              |     |Furinture           |
   |------------------------|     |--------------------|
-  |-dimensions: int[]      |     |-manucaturer: String|
+  |-dimensions: int[]      |     |-manufacturer: String|
   |-doors: int[]           |     |-width: int         |
   |-windows: int[]         |     |-finish: String     |
-  |-furinture: Furniture[] |-----|-cost: int          |
+  |-furniture: Furniture[] |-----|-cost: int          |
   |________________________|     |-xCoord: int        |
                                  |-yCoord: int        |
                                  |-DEPTH: Final int   |
@@ -35,4 +35,4 @@ b)
                                          |-------------|
                                          |_____________|
 
-c) To add freezers and dish washers into the floor plan, I would add them as subclasses of the funiture class using the electircal interface.
+c) To add freezers and dish washers into the floor plan, I would add them as subclasses of the furniture class using the electrical interface.

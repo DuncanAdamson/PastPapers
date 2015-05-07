@@ -1,18 +1,18 @@
 1 Explain the Complexity of web applications
-1 The complexity of web applications comes from the scale that web applications are built to, often requiring multiple layers to be implemented to handle the raks the web app is designed for.
+1 The complexity of web applications comes from the scale that web applications are built to, often requiring multiple layers to be implemented to handle the task the web app is designed for.
 2 Explain the importance of source control
-2 Source control is important as a way of managing updates too the application, preventing any unwated changes, and allowing multiple the same file to be editted by multiple people without any risking over writing either earlier changes or each others.
+2 Source control is important as a way of managing updates to the application, preventing any unwated changes, and allowing multiple copies of the same file to be edited by multiple people without any risk over writing either earlier changes or each others.
 3 Describe the main commands in GIT
 3 pull: downloads any changes from the main repo to the one pulling.
- clone: completely copies the conntenets of the main repo into a new one on the computer cloning.
+ clone: completely copies the contents of the main repo into a new one on the computer cloning.
  commit: documents all the changes made since the last commit the repo is aware of, and prepares it to be pushed.
  push: sends all commits made in this repo to the branch that is being pushed too.
 4 Describe and draw the architecture of a web application
-4 (Drawing may come later, not sure) A web application is normally split into serveral tiers. First there is the top teir, which is the client, aka what the user interacts with. This tier gets and sends data from the middle tier. 
- The middle tier gets requests from the top tier to render web pages, then it sends requests to the bottom teir to retrive data. The bottom teir takes the requests for data, and searches the database's for it, then returns it to the middle tier.
+4 (Drawing may come later, not sure) A web application is normally split into serveral tiers. First there is the top tier, which is the client, aka what the user interacts with. This tier gets and sends data from the middle tier. 
+ The middle tier gets requests from the top tier to render web pages, then it sends requests to the bottom tier to retrieve data. The bottom tier takes the requests for data, and searches the databases for it, then returns it to the middle tier.
  The middle tier takes the data to create the pages, then it sends the pages to the client, which renders them.
 5 Explain the advantage of tiers in architecture
-5 Tiers seperate the different conncerns of creating the web application, allowing each different asspect to be focused on independitly.
+5 Tiers seperate the different conncerns of creating the web application, allowing each different asspect to be focused on independently.
 6 Illustrate the different system archectures
 6 Monolithic: user <-> [User Interface, Methods, Data Structures, File I/O]
   2-Tier : user <-> [User Interface, Methods, Functionality] <-> (Database)
@@ -21,12 +21,12 @@
            user <-> [load ballance server]  <->[Web Server] <-> [App Server] <-> [Data Server] <-> (Database)
                                            \-> [Web Server] <-> [App Server] <-> [Data Server] <-> (Database)
 7 Provide reasons for separating the different types of concerns
-7 It allows for the seprate tasks involved in the creation of a webappilcation, making both bug fixing and makng new modules much easier.
+7 It allows for the seprate tasks involved in the creation of a web application, making both bug fixing and makng new modules much easier.
 8 Illustrate the basic data flows of messages amd communications through the n-tier architecture
 8 (Later)
 9 Design and draw the data model required for a basic web application
 9 user <-> client <-> middleware <-> databases
 10 draw wireframes and provide a walkthrough of the system
 10 (later, possibly attached)
-11 Disscus the advantages and disadvantages of Top-Down and Bottom Approaches to System Design
+11 Disscus the advantages and disadvantages of Top-Down and Bottom-Up Approaches to System Design
 11 

@@ -1,0 +1,4 @@
+2)
+4,6,7,15,16: Common Coupling: Sharing global atributes between the different modules causes issues if the deffinition of the variable changes, a solution would be to use the singleton design patteren for the log and ignore classes, to prevent them being changed, and access them through relevent function.
+4: Flag coupling, flow of the function contorlled by a boolean flag. This can cause unsafe access of the data. A solution would be to create a function to decide wheather or not to run the orginal one, which would throw an exception if it fails to access.
+15,16: content coupling, changing the log file without explicitly calling it. This could cause a problem in that if Log is changed, preformCleanup will also have to be.

@@ -1,0 +1,28 @@
+c)   30
+  24    40
+11  26 36 58
+ 13     48
+Height 3
+preorder:  30,24,11,13,26,40,36,58,48
+postorder: 13,11,26,24,36,48,58,40,30
+inorder:   11,13,24,26,30,36,40,48,58
+d)   36
+  24    40
+11  26    58
+ 13     48
+
+delete(node n)
+	node s = n
+	if n.getRight != null
+		s = n.getRight
+		while s.getLeft != null
+			s = s.getLeft
+	else if n.getLeft != null
+		s = n.getLeft
+		while s.getRight !=null
+			s.getRight
+	else
+		n = null
+		break
+	swap(s,n)
+	n = null

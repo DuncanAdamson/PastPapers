@@ -1,0 +1,38 @@
+a) A design pattern is a general template for solving recurring design problems, with the cappacity to be applied to a specific context.
+b) The singleton patteren aims to represent an entity as a single instance of a class, this requires the constructor and entity to be accessable, whithout the client being able to creat mpore than one entity.
+c)
+public class Singleton {
+	public static Singleton singelton;
+	private Signleton(){
+		//initiates the instance
+	}
+	public static Singleton getSingleton(){
+		if (Singleton == null){
+			sigketon = new singleton()
+		}
+		return singleton
+	}
+}
+d) An example for the singleton may be a piece of software for a univeresity, where only the university using it needs to be represnted.
+e) Factory pattern
+f)
+public BuildThreeObjects t;
+@before
+public void setup(){
+	t = new BuildThreeObjects();
+}
+@after
+public void teardown(){
+	t = null;
+}
+@test
+public void NoMoreThanThree(){
+	int count = 0;
+	for(int i = 0;i < 4;i ++){
+		if(t.buildObject() != null){
+			count ++;
+		}
+	}
+	assertTrue(count == 3);
+}
+g) This may be useful as it would allow the same instance to be reused after garbage collection without having to initialize a new one. It could be done by having the client decrement the object count during collection if any of the objects are collected as garbage.

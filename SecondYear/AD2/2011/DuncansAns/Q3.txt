@@ -1,0 +1,10 @@
+insert: Linked List O(1) assuming, as it is unsorted, that it is simply being added to the end.
+	Array O(n) to maintain sorted order after adding new element
+find:	Linked list O(n) as it's unsorted, it would have to compare every element with the key
+	Array O(log(n)) like in a binary search
+size:	Linked list O(n) Linked lists give no indication of the size of the data set, therefore would have to iterate across the whole thing.
+	Array O(1) arrays store their length, therefore simply have to retrieve that value.
+remove:	Linked list O(n) once found, it doesn't have to access the data set again.
+	Array O(n), same as linked list
+	
+

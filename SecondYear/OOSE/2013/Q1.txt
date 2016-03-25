@@ -1,0 +1,64 @@
+//I noticed later that the meathod should be checkValid, not isValid. I've left it as isValid, because it would be a lot of effort to update the UML etc. but for checking ansewers, you should check using checkValid for your ansewrs
+a)
+ __________            __________       ______________
+|Ticket    |     _____|UseTicket |_<___|SingleTicket  |
+|----------|     |    |----------|   | |--------------|
+|----------|--<--|    |-uses     |   | |-datePurchased|
+|-isValid()|     |    |----------|   | |--------------|
+|__________|     |    |-isValid()|   | |-isValid()    |
+                 |    |__________|   | |______________|
+                 |     ___________   |   __________
+                 |____|TimedTicket|  |__|TenJoureny|
+                      |-----------|     |__________|
+                      |-startDate |    __________
+                      |-endDate   |-<-|OneDay    |
+                      |-----------|   |----------|
+                      |-isValid() |   |----------|
+                      |___________|   |-isValid()|
+                                      |__________|
+b)
+SingleTicket tests
+Ticket t;
+@before
+public void setup(){
+	t = new SingleTicket();
+}
+@after
+public void teardown(){
+	t = null;
+}
+@test
+public void firstUse(){
+	asstertTrue(t.isValid());
+}
+@test
+public void secondUse(){
+	t.isValid();
+	asstertTrue(!t.isValud());
+}
+TenJoureny test
+Ticket t;
+@before
+public void setup(){
+	t = new TenJourney();
+}
+@after
+public void teardown(){
+	t = null;
+}
+@test
+public void firstTen(){
+	works = True;
+	for(int i = 0;i < 10;i ++){
+		works = works && t.isValid();
+	}
+	assertTrue(works);
+}
+@test
+public void eleventh(){
+	for(int i = 0;i < 10;i ++){
+		t.isValid();
+	}
+	assertTrue(!t.isValid());
+}
+c) By creating a new class extending the timed ticket class, overriding the isValid meathod with one which compares the current date to the end date, with the end date set to the start date plus one week. As this uses extends from the orginal ticket class, there is no need to implement new software to check. Similarly, extending the timed class allows us to avoid implementing new code for the start and end date

@@ -1,0 +1,9 @@
+a) Defect detection: Attempting to find and fix any defects in the systembefore it is completed.
+Failure documentation: Document any problems with the system so that they are known ahead of time.
+Acceptance demonstration: Showing that the system works
+b) Integration test stratagey attempts to test from the least integrated components, in towards those which are more integrated with the system. One example would be the outside in strategey, which involves testing all unintegrated components, then moving inwards to more integrated parts.
+c)i) In JUnit, firstly, any fixtures must be defined before test cases, secondly, using the @Before annotation is used to designate a function as being called before any test cases, to set up the fixtures. Finally, the @After annotation is used to reset any fixtures, usually returning them to null, after each test case.
+ii) A stub class coulb be used to test the SimpleTemperatureTracker interface by creating a small class which only implements the methods from the interface as well as any auxiliary functions to handle the testing for the methods. This allows the fixture to take a class with the interface, call the methods, and ensure that they are properly implemented.
+iii) Call the record method three times with temperature over 100c, checking that no alert is issued on the first two times, then, on the third, that an alert is.
+iv) Call the record method twice on over 100c, the again with one under 100c, then check that no alert was issued.
+v) Firstly, call the method used in part iii, keeping track whether or not it returns true. Then record a temperature over 100c, checking after if a second method was called.

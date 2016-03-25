@@ -1,0 +1,87 @@
+1 Explain the Complexity of web applications
+1 The complexity of web applications comes from the scale that web applications are built to, often requiring multiple layers to be implemented to handle the task the web app is designed for.
+2 Explain the importance of source control
+2 Source control is important as a way of managing updates to the application, preventing any unwated changes, and allowing multiple copies of the same file to be edited by multiple people without any risk over writing either earlier changes or each others.
+3 Describe the main commands in GIT
+3 pull: downloads any changes from the main repo to the one pulling.
+ clone: completely copies the contents of the main repo into a new one on the computer cloning.
+ commit: documents all the changes made since the last commit the repo is aware of, and prepares it to be pushed.
+ push: sends all commits made in this repo to the branch that is being pushed too.
+4 Describe and draw the architecture of a web application
+4 (Drawing may come later, not sure) A web application is normally split into serveral tiers. First there is the top tier, which is the client, aka what the user interacts with. This tier gets and sends data from the middle tier. 
+ The middle tier gets requests from the top tier to render web pages, then it sends requests to the bottom tier to retrieve data. The bottom tier takes the requests for data, and searches the databases for it, then returns it to the middle tier.
+ The middle tier takes the data to create the pages, then it sends the pages to the client, which renders them.
+5 Explain the advantage of tiers in architecture
+5 Tiers seperate the different conncerns of creating the web application, allowing each different asspect to be focused on independently.
+6 Illustrate the different system archectures
+6 Monolithic: user <-> [User Interface, Methods, Data Structures, File I/O]
+  2-Tier : user <-> [User Interface, Methods, Functionality] <-> (Database)
+  3-Tier : user <-> [Client] <-> [Middleware] <-> (Databases)
+  N-Tier :                                 /-> [Web Server] <-> [App Server] <-> [Data Server] <-> (Database)
+           user <-> [load ballance server]  <->[Web Server] <-> [App Server] <-> [Data Server] <-> (Database)
+                                           \-> [Web Server] <-> [App Server] <-> [Data Server] <-> (Database)
+7 Provide reasons for separating the different types of concerns
+7 It allows for the seprate tasks involved in the creation of a web application, making both bug fixing and makng new modules much easier.
+8 Illustrate the basic data flows of messages amd communications through the n-tier architecture
+8 (Later)
+9 Design and draw the data model required for a basic web application
+9 user <-> client <-> middleware <-> databases
+10 draw wireframes and provide a walkthrough of the system
+10 (later, possibly attached)
+11 Disscus the advantages and disadvantages of Top-Down and Bottom-Up Approaches to System Design
+11 Top down design sperates low level and high level abstrations, where are Bottom-up requires us to start coding almost striaght away. High level makes it easier to design the system without having to consider the low level concerns, where as low level allows work to begin striaght away. This makes high level better for designing full systems, where as low level is better for making individual modules.
+12 Define or describe web application frameworks
+12 Web application frameworks are frameworks to help deal with repeated code, mainly for accessing databases. They provide partial implementation of web apps allowing the designers to override and extend them for thier sepcific purposes.
+13 List and describe defferent web application frameworks
+13 Symfony: PHP based, aims to speed up the creation and maintenance of web apps as wel as replacing repetitive coding tasks. It follows the MVC paradigm and intergrates with existing technology.
+Ruby on Rails: Ruby based. Takes advantage of the ease of ruby to make it quick and straightforward to devlop web apps. Main principles are to avoid repation, minimise the amount of descions made be the developer and emply the model-view-controller.
+Django: Python based. Aims to make devolpment fast. Main principles are reusability and pluggability of components as well as rapid devolpment. Uses MVT rather than MVC
+14 Illustrate and explain the MVC design pattern
+14   -> MODEL(data/logic) <---
+Query|  . change noffication |State Change/
+get  |  . /update event      |set change
+state| \./    user activity \|/
+VIEW(representation)<-----CONTROLLER(User interaction)
+                 .         /.\
+                 ............ view selection,change view
+15 To implement a web page in Django, which shows data from a data base, what steps would you have to take?
+15 A new template will be created to display the information, presumably extending a base template. A new view must be added to the views, this should create a context dictionary which it will feed to the template, the dictionary will take all the data from the relevnt models connected to the database. Finaly, in the urls file, the url will be redicected to the view.
+16 
+17 Describe and define information architecture
+17 Information architecture encompasses the structural design of shared information environments. the combination of organization, labeling, search and navigatopn systems, as well as the art and science of shaping information products and experiences to support usability and findability, and the disicipline and community of practice focused on bring principles of desigb abd achitecture.
+18 Describe the major information aritechure deliverables
+18 Devloping user personas: A meathod used to visulaise the users that will use the site by creating persona's to represent them. The next stage is to identify the needs of the user persona so that they can be priotise them. Another tool, used after the persona's have been anaylzed, is mocking up wireframes in order to get an idea of the what the site will look like. Finally a walk-through can be made to show the sequences of interaction with the web app.
+19 Describe the different approaches to IA and what kinds of questions they ask
+19 Top Down, designing for when a user arrives at the main page. The questions this design aims to deal with are:
+	Where am I at?
+	I know what I want, how do I search for it
+	How do I get around the site
+	What's useful, important, unquie about this site
+	What's important/unique about this site
+	What's available, what's happening
+	How can I get help, contact a human, get thier adress
+Bottom-Up, designed to cater to when a user lands somewhere on the site. Questions are:
+	Where am I
+	What's here
+	What else is here
+	Where can I go from here
+20 Describe and explain the HTTP protocols
+20 HTTP Get Request, request to the serever to retrive a webpage or some other form of data.
+Post: Like get, but also sends data to the server
+Head: Like get, but only asks for the headers
+Put: For storing data on the server
+Delete: deleting a resource on the server
+options: for finding out what the server can do
+trace: for debugging connections
+connect: for rstablishing a link through a proxy
+21 Describe the main methods used in HTTP
+21 HTTP is stateless, using cookies on the client side, as well as hidden vairables server side through POST methods. Another meathod is a unique id within the URL.
+It also use's the inter process communication protocl meathods of message passing, synchronization, shared memory and remote procedure calls (RPC)
+22 Explain the request-response interaction
+22 A client sends a message to an HTTP server, normaly get or post. The server then responds with the resource, normally in XML or XHTML but sometimes in other formats. Once the message is sent, the server closses the connection, making http stateless
+23 Compare and contrast state and stateless protocolls
+23 State protocalls maintain a connection between the client and server after the initial response, unlike stateless where it is closed. State has the advantage of saving time for interacting with the same client, as it removes the need for things like cookies to maintain sessions. However, this can take a lot of bandwith and server resources to keep open, it also requires the server to maintain information on clients during their sessions, again, using server resources.
+24 Indentify XML and describe its structure
+24 eXtensible Markup Language (XML) is desinged to transport and store data, it consists of 3 parts, firstly an optional prolog, containing the version and encoding of the document. Next it contains the body, where the bulk of the information is stored in the form of elements, starting with the root element, then it's attributes, the the oppening and closing tags of the elements in the body, including any child elements it conatains. Finaly, there is an optional epilog contaning comments and processing instuctions.
+25 Analyze an XML document and explain it's elements, attributes and entities
+26 look up w3 xml quiz

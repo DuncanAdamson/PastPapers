@@ -1,0 +1,38 @@
+a)In the object oriented enviroment, an object is self contanined entity and an instance of a class. A class is the specification of an object, containing the fields and methods the object will contain, as well as specifying what they do.
+b) 
+   ________________________       ____________________
+  |Floor_Plan              |     |Furinture           |
+  |------------------------|     |--------------------|
+  |-dimensions: int[]      |     |-manufacturer: String|
+  |-doors: int[]           |     |-width: int         |
+  |-windows: int[]         |     |-finish: String     |
+  |-furniture: Furniture[] |-----|-cost: int          |
+  |________________________|     |-xCoord: int        |
+                                 |-yCoord: int        |
+                                 |-DEPTH: Final int   |
+                                 |____________________|
+                __________________________|______________________
+                ^                ^             ^                ^
+                |                |             |                |
+         _______|________   _____|_____   _____|_______   ______|______
+        |Cupboard        | |Cookers    | |Fridge       | |Freezer      |
+        |----------------| |-----------| |-------------| |_____________|
+        |-isFull: boolean| |-rings: int| |-wattage: int| |-wattage: int|
+        |-shelves: int   | |___________| |_____________| |_____________|
+        |________________|        |            |______________| 
+                             _____|____       \|/
+                            |          |       |
+                            ^          ^       |
+                    ________|_____   __|___    |
+                   |Elctrical     | |Gas   |   |
+                   |--------------| |------|   |
+                   |-wattage : int| |______|   |
+                   |______________|            |
+                               |               |
+                               |          _____|_______
+                               |-------->|Electircal   |
+                                         |<<Interface>>|
+                                         |-------------|
+                                         |_____________|
+
+c) To add freezers and dish washers into the floor plan, I would add them as subclasses of the furniture class using the electrical interface.

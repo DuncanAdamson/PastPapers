@@ -1,0 +1,1 @@
+This implementation of pigeonhole sort would not be stable as the HashMaps may not retain the order the data is entered in.

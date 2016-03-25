@@ -1,0 +1,23 @@
+a)public class Time implements Ordered<Time>{
+	.
+	. // Skipping the already implemented meathods
+	. // Assumes, getters are getHour, getMinute & getSecond
+	public precedes(Time t){
+		int totalSecondsT = t.getSecond() + 60*t.getMinute() + 60*60*t.getHour();
+		int totalSecondsThis = second + 60*minute + 60*60*hour;
+		return totalSecondsT > totalSecondsThis;
+	}
+}
+// This requires the ordered interface to be made into a generic, allowing us to ensure that the meathod is only used by relevent classes.
+//Not sure if this is allowed, as it doesn't say that you can, or can't change the interface in the question, however, the only other easy solution would be to cast Other as time type, which is far from ideal.
+b) 	public int minutesDifference(Time t){
+		return (t.getHour()*60*60 + t.getMinute()*60 + t.getSecond() - hour*60*60 - minute*60 - second)/60;
+	}
+c) 	public int wholeMonths(Date d){
+		int diff = d.getYear()*12 + d.getMonth() - year*12 - month;
+		if(d.getDay() < day){
+			diff --;
+		}
+		return diff;
+	}
+

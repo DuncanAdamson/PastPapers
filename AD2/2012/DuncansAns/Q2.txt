@@ -1,1 +1,0 @@
-b) Both of these have complexity O(1) as all the operations performed take the same time regardless of the data set.

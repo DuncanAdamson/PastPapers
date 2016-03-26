@@ -1,0 +1,1 @@
+The general format is for past paper ansewrs to be given 1 question per file, labeled q1, q2 ... qn as a .txt for questions without a progrmaing compenet, or with the relevent extenstion for the langaue (.c .java etc.) to allow appropriate highlighting.

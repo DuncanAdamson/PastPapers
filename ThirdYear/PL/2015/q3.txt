@@ -1,0 +1,24 @@
+a) A complier translates a high level langaue into object code, without running it. An interpreter executes source code one instruction at a time, it does not translate the source code.
+b) The syntatic analysis checks that the program is well formed and determines it's pharse structure whilst contextual analysis checks whether or not the source program (represented by an AST) satisfies the souce language's scope and type rules.
+c) ANTLR uses the grammer file to generate a lexer and a parser which are java classes named FunParser and FunLexer.
+The lexer is generated from the lexical rules in the grammer file and is used to generate a token string from a source file.
+The parser is generated from context-free tules in the grammer file, such as those defining com or seq_com it is a modified form of recusrsive-descent parser that contains a parsing method for each nonterminal ie com() seq_com() etc. When run, the parser will accept a tocken stream and build an AST. in accordance with the tree building operations following the '->' in the file.
+d) ANTLR uses to tree grammer file to generate a code generateror, which is a java class named FunEncoder
+FunEncoder is generated from tree patterens and actions in the tree grammer file. It is a depth first left-to-right tree walker, When run, it pattern-matches the AST and preforms the associated actions in the braces for each pattern. These actions perform address allocation and SVN code selection including, when needed, patching of forward jumps.
+e)
+grammer)
+...
+loop
+      : LOOP COLON com+ EXIT WHEN com+ DOT
+...
+LOOP  : 'loop'
+EXIT  : 'exit'
+WHEN  : 'when'
+DOT   : '.'
+...
+Encoder)
+loop
+      : ^(LOOP COLON seq_com EXIT WHEN com+ DOT) {
+            Let i be the address of the start of the loop, emmit a JUMPTi instruction where it jumps if the first intruction after the WHEN token is true.
+                                              }
+

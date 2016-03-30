@@ -1,0 +1,21 @@
+a) The lifetime of a variable is the amount of the program which the variable is available for access for.
+Program Lifetime:
+    i
+        p():
+            y
+        q():
+            x
+b) The new variable would be precedence over the orignal when i is reffered too for the duration of the function p, after which it would revert to the orginal i, with the information pointed to by the new i being made available for overriding.
+c) SHAPE = {0,1,2}
+   COMPONENT = SHAPE * int = {1,2,3} * { ...,-1,0,1,....}
+   PICTURE = {COMPONENT, COMPONENT, COMPONENT...}
+d) 
+public class Circle{
+    int radius;
+}
+public class Rectangle{
+    int width;
+    int hieght;
+}
+e) As the shape class is abstract, no objects of it's type can be made, therefore there would be no changes to the equation.
+f) instrad of saying what kind of primative type the object, we would instead specifiy the values for example Circle 1, Circle 2 ..... Rectangle (1x1), Rectange(1x2) ..... 

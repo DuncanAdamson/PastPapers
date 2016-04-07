@@ -1,0 +1,9 @@
+1. Wednesday 27th April - Algorithmics I - Western Infirmary Lecture Theatre Seminar Rooms 112 & 114 and Foyer 9:30 - 11:00
+2. Friday 29th April - Advanced Programming - John McIntyre Building Rooms 201 & 208 9:30-11:00
+3. Monday 9th May - Operating Systems - Hunter Hall West 9:30 - 11:00
+4. Tuesday 10th May - Interactive Systems - John McIntyre Building Rooms 201 & 208 9:30-11:00
+5. Wednesday 11th May - Networked Systems - Hunter Hall East 9:30 - 11:00
+6. Friday 13th May - Database Systems - John McIntyre Building Rooms 201 & 208 9:30-11:00
+7. Monday 16th May - Programming Languages - Randolph Hall & Senate Room 9:30 - 11:00
+8. Tuesday 17th May - Professional Software Development - John McIntyre Building Rooms 201 & 208 9:30-11:00
+9. Wednesday 18th May - Professional Skills and Issues - Kelvin Gallery 14:00-15:00

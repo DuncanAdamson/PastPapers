@@ -1,0 +1,1 @@
+a) test driven devlopment is a method of devlopment where the devloper devlops a set of tests first, then writes the code for that section afterwards

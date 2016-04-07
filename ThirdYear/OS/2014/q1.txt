@@ -1,0 +1,4 @@
+a) A Page replecment algorithm is an algorithim that is used to replace a page in memory when a page fault occours.
+b) I would choose an algrothim with a global scope. This is because the randomly updating application will need to change pages frequently, whilst the others, as interactive applications, will not need to change thier pages that frequently, therefore most likley won't be encountering page faults all that often.
+c) i) The second chance algothim works by asigning each page a refrence bit, with 1 representing a second chance (normally representing a memory access). When a page is needed, a pointer goes across, setting any refrence bits to 0, and stoping at the first 0 it encoutrous, using that page as the one to replace.
+ii) The clock varient maintains a cirular list of pages in memory 

@@ -1,0 +1,8 @@
+a)i)  Each packet contains an ack number, which states which byte is next expected to be recived.
+ii)   Ack-clocking is a method of maintaining the network at equlibrium such that the total number of packets is constant. It works by clocking out the next packet in the sequence when it recvies the acknowldgemnt packet. This automactically reduces the sending rate during congestion, as it will take longer for acknowledgement packets to reach the host.
+b)    An ACK timeout occours when the network has failed somewhere, causing the data to be lost.
+      A tripple-duplicate signal will occour when packets are being losted due the network being heavily congested.
+c)i)  Tripple-duplicate reduces it robustness to packet reordering.
+ii)   Singal duplicate would be suffiecent in cases where the network is very simple, for example only two devices, as there should never be enough traffic to cause loss due to congestion in normal curicumstances between them, meaning that only a singal duplicate would be needed to deserve reducing traffic.
+iii)  Whilst a double duplicate ACK would be able to provide faster resonses to network congestion, a tripple duplicate ACK adds an extra layer which prevents the network from reducing transmission speed to quickly, whilst still responding quickly enough so as not to let the network collapse under the congestion.
+d)    TCP Congestion control assumes that the all data loss is due to congestion, which, in the case of a wireless network where outside noise has much more impact than on cabled networks, can cause very slow sending speed when there is allready little use of the bandwidth

@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\title{WAD May 2015}
+\author{Stephen Brown}
+
+\begin{document}
+\maketitle
+
+Note: Answers are correct, only to the best of my knowledge. If you notice any mistakes, please email me at 1106679B@student.gla.ac.uk
+
+\begin{enumerate}
+\section{Section A}
+\item{D - pull add commit push}
+\item{C - Three Tier architecture}
+\item{B - Model View Controller Pattern}
+\item{C - Seperation of Concerns}
+\item{A - handle incoming requests from clients, request data from a database, return an html/xml response to the client}
+\item{C - Hyper Text Transfer Protocol}
+\item{B - GET and POST}
+\item{B - statelessness, maintains no state}
+\item{A - Asynchronous JavaScript and eXtensible Markup Language}
+\item{C - make requests without reloading the page, to recieve and work with data from the server, using any type data.}
+
+Question 10, my reasoning is that we can use XML AND JSON with AJAX, so any type data is technically more correct than using XML data.
+
+\section{Section B}
+\item A - Cascading Style Sheet
+\item A - .blue p
+\item B - div \#blue
+\item A - Hello world, with solid border and yellow background
+\item D - Goodbye world, with border and green background
+\item D - external referencing
+\item C - page load times will be faster, content is seperated from style, easy to maintain
+\item A - \$(".brown").click()
+\item C - \$(``p'').hover( function() \{\$(this).css('color', 'blue'); \}, function() \{ \$(this).css('color', 'red'); \});
+\item A - \$(document).ready(function() \{ //JQuery \});
+
+\section{Section C}
+\item A - name = models.CharField(max\_length=128, unique=True)
+\item C - slug = models.SlugField()
+\item D - self.slug = slugify(self.name)
+\item B - category = models.ForeignKey(Category)
+\item A - return self.title
+\item C - def category(request, category\_name\_slug)
+\item D - category = Category.objects.get(slug=category\_name\_slug)
+\item B - pages = Page.objects.filter(category=category).order\_by('-views')
+\item C - return render(request, 'app/categories.html', context\_dict)
+\item D - \verb|url(r'^category/(?P<category_name_slug>[\w\-]+)/$', |
+
+\verb|		 views.category, name='category'),|
+\end{enumerate}
+\end{document}

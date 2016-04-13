@@ -9,7 +9,6 @@ CREATE TABLE MemberOf(
     instrument VARCHAR(64) NOT NULL,
     FOREIGN KEY (bid) REFERENCES Band(bid),
     FOREIGN KEY (mid) REFERENCES Member(mid),
-    PRIMARY KEY (bid,mid)
 )
 /*
 b)

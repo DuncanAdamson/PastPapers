@@ -1,0 +1,19 @@
+  a) The lifetime of a variable is the ammount of time it is in scope, and can be reffered within, a program.
+  i) A global variable has a lifetime of the total execution time of the program.
+ ii) A local variable has a lifetime of the block it is created within.
+iii) A heap variable has an arbitary lifetime, bounded by the programs lifetime. It can be created and destroyed at any point within that bound.
+b)
+main() :  create d, add "is", add "am", add "are", rem "is"
+global    first node ------------------------------>
+heap      rest pointer ---------------------------->
+                    "is" string ------------------->
+                              "am" string ------------------------>
+                              "am" node -------------------------->
+                              rest pointer ----------------------->
+                                        "are" string ------------->
+                                        "are" node --------------->
+                                        rest pointer ------------->
+c) Encapsulation refers to the private parts of a program, ie. those not directly accessable outwith the class or package that they are defined in. This concept is important for protecting variables within a class or package from being assigned the wrong values, or otherwise opperated upon in a way that may effect the way the program runs.
+d) Java supports encapsulation on three levels; private, protected and public, where private refers to variables and methods encapsulated within the instance, proteceted within the package and public to those accessable to any part of the program.
+Example:
+  The word and rest variables are only accesable to the instance of Dict that they refer to, whilst the constructer, as well as the add, rem and main methods are all accessible to any class using the package.

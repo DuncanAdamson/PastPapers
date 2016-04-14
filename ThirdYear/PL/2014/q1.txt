@@ -1,0 +1,10 @@
+type = 'bool'
+     | 'int'('[]')?
+
+prim-expr = ....
+          | list
+          | array-index
+          | ....
+
+list = '['(id|num|array-index)(','(id|num|array-index))*']'
+aray-index = id'['(num|id)']'

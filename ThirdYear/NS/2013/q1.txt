@@ -1,0 +1,14 @@
+a)  Can't find any information in the lectures about Fourier analysis, if anyone can verify or correct this?
+b)  A Perfet Channel reffers to a medium for transmission of signals that are noise free.
+    In the equation Rmax = 2H log(2)V, H is the bandwidith of the medium, and V is the ammount of discreate values per symbol.
+    The baud rate is the number of symbols sent per second, for a digital signal, Rmax gives the maxium baud rate of the medium.
+c)  The check bits are at 1,2,4....(2^m) < n + k and are refer to the parity of a set of bits. These bits are, for the check bit at location i, starting at loction i, check the next i bits, skip i bits, repeat, i.e., for 1, check bits: 3,5,7,.... (n + k - ((n + k + 1) | 2))
+so, given 1001000
+bit : 1  2  3  4  5  6  7  8  9  10 11
+val : c1 c2 1 c3  0  0  1  c4 0  0  0 
+
+c1 = (1 + 0 + 1 + 0 + 0)|2 = 0
+c2 = (1 + 0 + 1 + 0 + 0)|2 = 0
+c3 = (0 + 0 + 1)        |2 = 1
+c4 = (0 + 0 + 0)        |2 = 0
+giving us the binary string 0 0 1 1 0 0 1 0 0 0 0

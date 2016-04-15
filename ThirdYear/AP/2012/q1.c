@@ -36,6 +36,7 @@ int set_isElement(Set *s, Item i){
         if((*(s->function))(i,pointer->item)){
             return 1;
         }
+        pointer = pointer->next;
     }
     return 0;
 }

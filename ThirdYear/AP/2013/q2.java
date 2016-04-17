@@ -23,6 +23,26 @@ public class MyQueueTS implements Queue{
     }
 }
 
+
+/* Alternate version, without having to re-implement everything */
+public class MyQueueTS implements Queue{
+    private MyQueue queue;
+    public MyQueue(){
+        queue = new MyQueue();
+    }
+    public boolean add(String t){
+        synchronized(this) {
+            return queue.add(t);
+        }
+    }
+    public synchronized String remove() throws NoSuchElementException {
+        synchronized(this) {
+            return queue.remove(t);
+        }
+    }
+}
+
+
 /*
 c) See q2c.c
 */

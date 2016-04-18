@@ -1,0 +1,18 @@
+a) The second solution is slightly more effiecent as it only uses one varaib;e to itterate over the list, saving on the opperations involved in this. Simmilarly, the second solution also saves paging, as each page only needs to be loaded once during the initialisation, rather than possibly being used twice.
+b) The system is not deadlocked as, once P3 compeletes, P1 and P2 will have enough resources to complete. We can prove this by constructing a reasource allocation/request/available table like so:
+                  |Allocated|Requested|Avalaible| Total
+Proccess\resources| R1 R2   | R1 R2   | R1 R2   | R1 R2
+1                 |  1  0   |  0  1   |  0  0   |  2  2
+2                 |  0  1   |  1  0   |----------------
+3                 |  1  1   |  0  0   |
+As in this table P3 is not requesting any new resources, and as there are enough total resources to allow any given process to finish, the system is not deadlocked.
+c)i) header
+ ii) directory data block
+iii) directory data block
+ iv) directory data block
+  v) directory data block
+ vi) file data block
+d)i) This would make it slower as it would require the disk head to jump arround the disk when trying to access data on the file system.
+ ii) This may make it faster as it would save on access to the disk.
+iii) This may make the system faster as it would save in seek time, however, if this results in frequent rewrites it would instead cause the file system to be slower.
+ iv) This may make the file system faster during run time, as it would reduce seek time, however, depending on how frequently the centre files were updated it may also reduce it.

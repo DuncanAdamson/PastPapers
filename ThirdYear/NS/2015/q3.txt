@@ -1,5 +1,26 @@
-3a) The main benifit of the stack approach is the seperation of concernes. This allows the software to be devloped for one layer without having to consider the other layers. This is much better than a monolithic approach in which the entire system must be considered when ever attempting to create a new network application.
-Another benifit is that this method saves on work, again by avoiding the need to devlop software for the other layers. Again, in a monolithic approach it would be required to either create the software each time, or to at least install the software for the layers as part of the software being designed.
-One of the main issues of this approach is the requirement for any layer, other that the top one, to provide services to the layer(s) above it. This can cause issues as it likey require complying to certian standards which may limit the options for devlopment. This is not a concern for monolithic devlopment, as it is self contained.
-b) Physical Layer, Data Link Layer, Network Layer, Transport Layer, Session Layer, Presentation Layer, Application Layer
-c) The algorithm starts by giving each bridge in the network a unique adress. The root bridge is the bridge with the lowest address, each bridge has a root port which is the port closest to the root bridge. In the case of a network of lans, there will also be a designated bridge. Once these are designed, all other ports are disabled, leaving a spaning tree i.e. no cycles. For instance, condsider 3 lans, each having 4 devices - one of which servers as a router contecting to the corrosponding routers in the other lans. In this example, the non router devices would each connect to the router with a desginated port, closing all other ports, whilst the two routers with the highest value of port number closing the ports connected to each other.
+3a) The main benifit of the stack approach is the seperation of concernes. This
+allows the software to be devloped for one layer without having to consider the
+other layers. This is much better than a monolithic approach in which the 
+entire system must be considered when ever attempting to create a new network 
+application.
+    Another benifit is that this method saves on work, again by avoiding the 
+need to devlop software for the other layers. Again, in a monolithic approach 
+it would be required to either create the software each time, or to at least 
+install the software for the layers as part of the software being designed.
+One of the main issues of this approach is the requirement for any layer, other
+than the top one, to provide services to the layer(s) above it. This can cause 
+issues as it likey require complying to certian standards which may limit the 
+options for devlopment. This is not a concern for monolithic devlopment, as it 
+is self contained.
+b) Physical Layer, Data Link Layer, Network Layer, Transport Layer, Session 
+Layer, Presentation Layer, Application Layer
+c) The algorithm starts by giving each bridge in the network a unique adress. 
+The root bridge is the bridge with the lowest address, each bridge has a root 
+port which is the port closest to the root bridge. In the case of a network of 
+lans, there will also be a designated bridge. Once these are designed, all 
+other ports are disabled, leaving a spaning tree i.e. no cycles. For instance, 
+condsider 3 lans, each having 4 devices - one of which servers as a router 
+contecting to the corrosponding routers in the other lans. In this example, the
+non router devices would each connect to the router with a desginated port, 
+closing all other ports, whilst the two routers with the highest value of 
+port number closing the ports connected to each other.

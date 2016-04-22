@@ -20,7 +20,7 @@ Given a buy order
 When the price of the item is not greater than the buy order price
 Then execute the buy order
 iv)
--
+1 code step for each distinct scenario step
 c) _________
   |plugin a |
   |_________|-----O )----|

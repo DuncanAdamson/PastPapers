@@ -1,1 +1,1 @@
-As we are geting the person from the list and storing them as a value, rather than accessing the list each time, we can expect that it will run faster then filter 2.
+As we are getting the person from the list and storing them as a value, rather than accessing the list each time, we can expect that it will run faster than filter 2.

@@ -1,4 +1,4 @@
-Pigeonhole sort works by creating a set of pigeonholes, each being referred to by a different key. It then goes over the orignal array, sorting each value into the relevant pigeonhole, then it goes over the pigeonholes in order, sorting each hole either recursively or using a different algorithm, finally it joins the holes together to create a sorted array. This array has complexity O(n + N).
+Pigeonhole sort works by creating a set of pigeonholes, each being referred to by a different key. It then goes over the original array, sorting each value into the relevant pigeonhole, then it goes over the pigeonholes in order, sorting each hole either recursively or using a different algorithm, finally it joins the holes together to create a sorted array. This array has complexity O(n + N).
 This would be useful for this task as it would make it easy to sort, by first sorting the data by Name, then any values with the same Name value would be sorted by height.
 To implement this in Java, HashMaps could be used for the implementation of the pigeonholes, and Arrays for the final list and the names organised by height.
 

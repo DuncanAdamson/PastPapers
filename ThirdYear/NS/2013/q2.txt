@@ -1,10 +1,10 @@
-a)  TCP's service model is foccoused on reliability, ensuring that packets arrive in order and providing congestion control. UDP, on the other hand is a light weight service, providing a connectionless way of sending datagrams, unlike TCP each taking a single IP packet to deliver the data (although this may be brocken up by the IPv4 protocol)
+a)  TCP's service model is focused on reliability, ensuring that packets arrive in order and providing congestion control. UDP, on the other hand is a light weight service, providing a connectionless way of sending datagrams, unlike TCP each taking a single IP packet to deliver the data (although this may be broken up by the IPv4 protocol)
     The main differences are:
-      - Congestion Controll : TCP provides this, UDP requires this to be provided by the applicaition
-      - Reliableity : TCP ensures packets arrive in order, UDP instead sends all data as a single packet, however this may be lost, delayed, reordered or duplicated in transit.
-      - Sockets : TCP sockets connect to each other, allowing either to send and recive data. UDP sockets are connectionless, with the sockets allowed to send to and recive from as many different addresses as needed.
-b)  In this situation, UDP would be the most appropriate for a number of reasons. 
-    Firstly, with video connferencing, it is more important to recive the most recent packet than the next packet as it is meant to be done in real time. UDP allows this to be done, where as TCP does not. 
-    Secondly, each datagram should send a complete frame of video, alongside a chunk of audio. With TCP these may be split up which could cause delays between video and audio, possibly even parts of the video, where as UDP would send it as a single packet, enforcing them being sent together. 
-    Thirdly, as video confferencing may well require multiple participents, UDP's ability to send to multiple addresses from a single socket makes it much easier for sending the data to multiple users, over either a client server model in TCP, which would cause delays, or using several sockets, possibly causing overhead related issues.
-    Whist TCP would provide more reliabilty, ensuring that every packet is sent, this could cause delays, rendering the bennifits of these relatively unimportant over the speed provided by UDP.
+      - Congestion Control: TCP provides this, UDP requires this to be provided by the application
+      - Reliability: TCP ensures packets arrive in order, UDP instead sends all data as a single packet, however this may be lost, delayed, reordered or duplicated in transit.
+      - Sockets: TCP sockets connect to each other, allowing either to send and receive data. UDP sockets are connectionless, with the sockets allowed to send to and receive from as many different addresses as needed.
+b)  In this situation, UDP would be the most appropriate for a number of reasons.
+    Firstly, with video conferencing, it is more important to receive the most recent packet than the next packet as it is meant to be done in real time. UDP allows this to be done, whereas TCP does not.
+    Secondly, each datagram should send a complete frame of video, alongside a chunk of audio. With TCP these may be split up which could cause delays between video and audio, possibly even parts of the video, whereas UDP would send it as a single packet, enforcing them being sent together.
+    Thirdly, as video conferencing may well require multiple participants, UDP's ability to send to multiple addresses from a single socket makes it much easier for sending the data to multiple users, over either a client server model in TCP, which would cause delays, or using several sockets, possibly causing overhead related issues.
+    Whist TCP would provide more reliability, ensuring that every packet is sent, this could cause delays, rendering the benefits of these relatively unimportant over the speed provided by UDP.

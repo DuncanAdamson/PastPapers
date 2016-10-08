@@ -1,4 +1,4 @@
-Largest number : 89, has 2 didgits
+Largest number : 89, has 2 digits
 least significant digit.
 0:
 1: 81,31
@@ -13,16 +13,16 @@ least significant digit.
 add into a list in order:
 s = [81,31,14,17,28,18,89,69,29,39]
 sort by next least significant
-0: 
+0:
 1: 14,17,18
 2: 28,29
 3: 31,39
-4: 
-5: 
+4:
+5:
 6: 69
-7: 
+7:
 8: 81,89
-9: 
+9:
 add to a list
 s = [14,17,18,28,29,31,39,69,81,89]
 As we've reached the most significant digit, we find the list is now sorted.

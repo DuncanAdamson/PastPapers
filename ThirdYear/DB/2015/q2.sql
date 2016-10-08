@@ -27,12 +27,12 @@
        |
     ⋈ on c
 
-The first one is much more effiecent as it preforms the costly join on the filtered list, rather than joining then filtering as in the second one
+The first one is much more efficient as it preforms the costly join on the filtered list, rather than joining then filtering as in the second one
 */
 /*
 b)
-Firstly, Unique values alow for instances to be NULL, where as Primary Keys may not be.
-Secondaly, There may only be one primary key, but there may as many unique values as the desinger wants.
+Firstly, Unique values allow for instances to be NULL, where as Primary Keys may not be.
+Secondly, There may only be one primary key, but there may as many unique values as the designer wants.
 */
 /*
 c)
@@ -43,7 +43,7 @@ WHERE Beer.name = Sells.beer
 GROUP BY Beer.name
 HAVING Count(bar) > 2 OR Beer.manufacturer = "Hoegaarden"
 /*
-d) They may not both produce the same result as, in the case where there are tupples with the same values for all of a,b and c, there would only be one returened for SELECT DISTINCT, where as for the intersect it would return all tupples of R.
+d) They may not both produce the same result as, in the case where there are tupples with the same values for all of a,b and c, there would only be one returned for SELECT DISTINCT, where as for the intersect it would return all tupples of R.
 */
 /*
 e)i) 1) A new tupple with name 'Fred' and salary 12000 is created in the table Foo.

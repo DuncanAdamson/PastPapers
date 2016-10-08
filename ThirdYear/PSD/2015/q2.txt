@@ -1,8 +1,7 @@
-a) "Integration Hell" refers to issues caused by devlopers attempting to intergrate two or more branches which are significantly different from each other, often caused by not having frequent enough changes.
-b)  Have everyone commit to the mainline at least once a day. This helps byensuring that the project is never more than a day out of sync between devlopers.
-    Every commit should build the mainline. This ensures that devliopers are not breaking the build when they make an update.
-    Everyone can see what's happening. This ensures that the devlopers don't commit before checking out any newer ones.
+a) "Integration Hell" refers to issues caused by developers attempting to integrate two or more branches which are significantly different from each other, often caused by not having frequent enough changes.
+b)  Have everyone commit to the mainline at least once a day. This helps by ensuring that the project is never more than a day out of sync between developers.
+    Every commit should build the mainline. This ensures that developers are not breaking the build when they make an update.
+    Everyone can see what's happening. This ensures that the developers don't commit before checking out any newer ones.
 c)i) see attached
-ii)  Firstly, the tasks, and time esstimates thereof, were not created at the start, possibly leading to missallocation of resources, such as devlopers, and leading to more tasks being postponed than otherwise would have been. 
+ii)  Firstly, the tasks, and time estimates thereof, were not created at the start, possibly leading to misallocation of resources, such as developers, and leading to more tasks being postponed than otherwise would have been.
 iii) Firstly, the tasks should be planned at the start of the project, rather than throughout.
-     

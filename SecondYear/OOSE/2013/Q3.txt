@@ -1,5 +1,5 @@
-a) A design pattern is a general template for solving recurring design problems, with the cappacity to be applied to a specific context.
-b) The singleton patteren aims to represent an entity as a single instance of a class, this requires the constructor and entity to be accessable, whithout the client being able to creat mpore than one entity.
+a) A design pattern is a general template for solving recurring design problems, with the capacity to be applied to a specific context.
+b) The singleton pattern aims to represent an entity as a single instance of a class, this requires the constructor and entity to be accessible, without the client being able to create more than one entity.
 c)
 public class Singleton {
 	public static Singleton singelton;
@@ -13,7 +13,7 @@ public class Singleton {
 		return singleton
 	}
 }
-d) An example for the singleton may be a piece of software for a univeresity, where only the university using it needs to be represnted.
+d) An example for the singleton may be a piece of software for a university, where only the university using it needs to be represented.
 e) Factory pattern
 f)
 public BuildThreeObjects t;

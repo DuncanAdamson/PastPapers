@@ -1,11 +1,11 @@
 2a) N : Nominal, labels on the data, for example, types of meat : pork, beef ....
     O : Ordered, set of data that is ordered, able to preform the operations equals, does not equal, greater than, less than, for example grades of meet, A, AA, AAA
-    Q-interval: Quantitative value with the zero value arbitary, allowing only the difference to be compaded, for example dates.
-    Q-ratio: Quantive value with the zero value fixed, allowing the ratio to be found as well as the differnce, for example mass or length.
-b) a box and whiskers plot is a type of data visualisation, normally with the "whiskers" going from the maxium to the minium  whilst the boxes go form the 25th percentile to the 50th, and from the 50th to the 75th. for example, assume there is a data set with the 0th, 25th, 50th, 75th and 100th precentiles [0,1,2,3,4] the the corosponing box and whiskers plot would be:
+    Q-interval: Quantitative value with the zero value arbitrary, allowing only the difference to be compared, for example dates.
+    Q-ratio: Quantitative value with the zero value fixed, allowing the ratio to be found as well as the difference, for example mass or length.
+b) a box and whiskers plot is a type of data visualisation, normally with the "whiskers" going from the maximum to the minimum whilst the boxes go form the 25th percentile to the 50th, and from the 50th to the 75th. for example, assume there is a data set with the 0th, 25th, 50th, 75th and 100th percentiles [0,1,2,3,4] the corresponding box and whiskers plot would be:
    _______
 ---|__|__|---
 0  1  2  3  4
-these are best utilised for highlighting the concentration of data arround the cenral point, as well as to highlight the distance between the maxium and the minium.
-c) An alternitive would be to create a dynamic heat map allowing the user to specify what factor(s) they want to display. This has the obvious bennifit for location information, as it would display the location for all information sets. For the other data, this would make it easier to see patternes, particualrly when looking for patterns to do with location. in coparison, an sql table would be in the best case as easy to find the pattern, and in the worst case much more difficuilt.
-Another benifit is that the human eye is evoloved to detect patterns in colourded data, rather than in lists, making a heat map much easier to interpret.
+these are best utilised for highlighting the concentration of data around the central point, as well as to highlight the distance between the maximum and the minimum.
+c) An alternative would be to create a dynamic heat map allowing the user to specify what factor(s) they want to display. This has the obvious benefit for location information, as it would display the location for all information sets. For the other data, this would make it easier to see patterns, particularly when looking for patterns to do with location. in comparison, an sql table would be in the best case as easy to find the pattern, and in the worst case much more difficult.
+Another benefit is that the human eye is evolved to detect patterns in coloured data, rather than in lists, making a heat map much easier to interpret.

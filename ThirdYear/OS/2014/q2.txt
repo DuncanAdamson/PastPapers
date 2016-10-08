@@ -1,4 +1,4 @@
-a) A critical section is a section where only one proccess may be updating the variables at any given point.
+a) A critical section is a section where only one process may be updating the variables at any given point.
 b) i)
 semaphore s = semaphore # initilise to 1
 void task1(){
@@ -24,8 +24,8 @@ void task2(){
     s.wait
     do task
 }
-these would, on a uniprocessor, exectute in the order 2,1(does task), 2(does task)
-c) The pthread join funciton allows threads to be synchronised by waiting for the other treads to complete before continuing in the main thread.
+these would, on a uniprocessor, execute in the order 2,1(does task), 2(does task)
+c) The pthread join function allows threads to be synchronised by waiting for the other treads to complete before continuing in the main thread.
 example:
 task one:
 int main(){

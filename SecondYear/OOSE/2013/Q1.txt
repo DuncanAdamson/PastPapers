@@ -1,4 +1,4 @@
-//I noticed later that the meathod should be checkValid, not isValid. I've left it as isValid, because it would be a lot of effort to update the UML etc. but for checking ansewers, you should check using checkValid for your ansewrs
+//I noticed later that the method should be checkValid, not isValid. I've left it as isValid, because it would be a lot of effort to update the UML etc. but for checking answers, you should check using checkValid for your answers
 a)
  __________            __________       ______________
 |Ticket    |     _____|UseTicket |_<___|SingleTicket  |
@@ -61,4 +61,4 @@ public void eleventh(){
 	}
 	assertTrue(!t.isValid());
 }
-c) By creating a new class extending the timed ticket class, overriding the isValid meathod with one which compares the current date to the end date, with the end date set to the start date plus one week. As this uses extends from the orginal ticket class, there is no need to implement new software to check. Similarly, extending the timed class allows us to avoid implementing new code for the start and end date
+c) By creating a new class extending the timed ticket class, overriding the isValid method with one which compares the current date to the end date, with the end date set to the start date plus one week. As this uses extends from the original ticket class, there is no need to implement new software to check. Similarly, extending the timed class allows us to avoid implementing new code for the start and end date

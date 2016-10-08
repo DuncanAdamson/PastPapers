@@ -1,2 +1,2 @@
 1)a) function f randomly organises a list of strings. A more appropriate name would be Random_Order
-b) O(n^2) as it itterates over the list, which is O(n), and whilst itterating over it, it calls the remove function, which is also O(n), giving an overall complexity of O(n^2).
+b) O(n^2) as it iterates over the list, which is O(n), and whilst iterating over it, it calls the remove function, which is also O(n), giving an overall complexity of O(n^2).

@@ -29,19 +29,18 @@ c) SEE q1c.java
 */
 /*
 d)
-The optimisation proccess is the proccess of attempting make the querry run with as few computations as possible. This mostly involves removing, or delaying, costly operations such as joins where possible.
-The process of optimasation for a querry is to construct all possible execution plans of the querry, then estimate the cost of each of them. This will normaly be done through the creation of an expresion tree, a tree representing the relational algebra. The Equivilence rules allow different trees to be produced for the same querry, giving us serverl trees to choose from. From these, we estimate the cost of each operation by consdering what operation it is, and the size of the metadata associated with it.
-For example, if trying to find the names of all dogs whos owners are over the age of 30, we could have either of these trees:
+The optimisation process is the process of attempting make the query run with as few computations as possible. This mostly involves removing, or delaying, costly operations such as joins where possible.
+The process of optimisation for a query is to construct all possible execution plans of the query, then estimate the cost of each of them. This will normally be done through the creation of an expression tree, a tree representing the relational algebra. The Equivalence rules allow different trees to be produced for the same query, giving us several trees to choose from. From these, we estimate the cost of each operation by considering what operation it is, and the size of the metadata associated with it.
+For example, if trying to find the names of all dogs who’s owners are over the age of 30, we could have either of these trees:
     π Dog.name        π Dog.name
       |                     |
       |                     |
       ⋈                 σ age > 30
      / \                    |
     /   \                   |
- Dog    σ age > 30          ⋈ 
+ Dog    σ age > 30          ⋈
           |                /  \
           |               /    \
        Owner            Dog     Owner
-From these two, we the first one would be faster to execute as it preforms the join on the filtered list, thus reducing the ammount of operations to preform.
+From these two, we the first one would be faster to execute as it preforms the join on the filtered list, thus reducing the amount of operations to perform.
 */
-

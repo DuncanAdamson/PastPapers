@@ -28,8 +28,8 @@ Possible User Stories & Requirements:
   Tasks:
     - Add an activity to allow hikers to register
     - Modify the data API to allow for storing a hikers details
-    - Create a querry for searching for retriveing routes
-    - Create a querry for retriving the accommadation assoisated with the route.
+    - Create a query for searching for retrieving routes
+    - Create a query for retrieving the accommodation associated with the route.
     - Add an activity to allow a hiker to select a route they're going on
     - Modify the data api to allow for hikers and routes to be associated alongside a date.
 
@@ -39,42 +39,42 @@ Possible User Stories & Requirements:
     So that I can more easily keep track of my work.
   Tasks:
     - Add an activity for allowing a porter to accept job requests
-    - Create a querry to retrieve all accepted hikers and associted routes.
+    - Create a query to retrieve all accepted hikers and associated routes.
     - Add an activity for allowing porters to view all accepted jobs
-    - Create a querry to sort accepted hikers by date.
+    - Create a query to sort accepted hikers by date.
 
   Story:
     As a hiker,
     I want to vary the route I'm taking,
-    So that I can explore the sournding area more
+    So that I can explore the surrounding area more
   Tasks:
     - Add an activity to allow preset routes to be changed
     - Add an activity to allow hikers to create their own routes
     - Add an activity to allow hikers to select smaller routes
-    - Modify the data API to allow for hikers and routes to be associted allongside a date.
+    - Modify the data API to allow for hikers and routes to be associated alongside a date.
     - Add an activity to allow hikers to chose the dates they arrive within the route.
 
   Story:
-    As a potential proter,
+    As a potential porter,
     I want to be able to offer my services for a short route on my way to work,
     So that I can make a little extra money.
   Tasks:
     - Add an activity to allow porters to set up routes
-    - Add an activity to allow people who are not proffesional porters to register
+    - Add an activity to allow people who are not professional porters to register
 
   Story:
     As a hiker,
     I want to ensure that my luggage is being taken by someone I can trust
     So that I don't have to worry about it whilst I am walking.
   Tasks:
-    - Modify the porter sign up activity to ensure they provide assurence information
+    - Modify the porter sign up activity to ensure they provide assurance information
     - Add an activity to ensure hikers know the requirements for porters tp sign up
-    - Modify the data API to store the porters assurence data
+    - Modify the data API to store the porters assurance data
 
   Story:
     As a porter,
     I want to be able to set up a route
-    So that I can save money through ecconimics of scale
+    So that I can save money through economics of scale
   Tasks:
     - Add an activity to allow porters to set up routes
     - Add an activity to allow porters to choose the price of each route

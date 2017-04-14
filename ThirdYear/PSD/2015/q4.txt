@@ -6,21 +6,21 @@ a) The steps in refactoring are:
     - 5: run tests
     - 6: if tests fail, go to 3, else go to 7
     - 7: commit
-b) The makeCoffee() method is too long, this could be fixed by sepperiting
+b) The makeCoffee() method is too long, this could be fixed by separating
 parts of this into other methods.
-   There is repeated code in the if - else if block in the make coffee 
+   There is repeated code in the if - else if block in the make coffee
 method. This could be fixed by creating a new addSugar() method.
-   The use of a large ammount block of if - elseif statemnts indicated a 
-reluctance to exploit object polymorphism, this could be fixed by 
+   The use of a large amount block of if - elseif statements indicated a
+reluctance to exploit object polymorphism, this could be fixed by
 introducing a super class or interface for these classes to better take
 advantage of object polymorphism.
 c)i) context Film::name inv: length < 50
  ii) context Showing : Showing->count(Tickts)::Integer = count implies
                        count <= Theatre.capacity
-iii) context Showing inv: ticket.type = JUNIOR implies Film.rating = U or 
+iii) context Showing inv: ticket.type = JUNIOR implies Film.rating = U or
                                                        Film.rating = PG
- iv) 
-  context Showing inv: ticket-> t1| t1.type = JUNIOR and Film.rating = PG 
+ iv)
+  context Showing inv: ticket-> t1| t1.type = JUNIOR and Film.rating = PG
                        implies
-                       ticket->exists(t2 | t1.group = t2.group and 
+                       ticket->exists(t2 | t1.group = t2.group and
                                            t2.type = ADULT)

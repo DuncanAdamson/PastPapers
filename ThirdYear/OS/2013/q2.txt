@@ -5,7 +5,7 @@ PP   |p1|p2|p1   |p5            |p1                  |p3   |p4|
 RR   |p1   |p2|p1|p3|p1|p4|p3|p5|p1|p5|p1|p5|p1|p5|p1|p5|p1   |
 
 ii)
-Proccess, Best Turraround Time, FCFS,   PP, RR
+Process, Best Turnaround Time, FCFS,   PP, RR
 1       , 10                  , 10  , 16  , 19
 2       ,  2                  , 11  ,  2  ,  3
 3       ,  4                  , 13  , 18  ,  8
@@ -13,14 +13,14 @@ Proccess, Best Turraround Time, FCFS,   PP, RR
 5       ,  9                  , 19  ,  9  , 17
 av      ,  3.8                , 13.4, 12.8, 10.4
 
-Round robin gaurentees the lowesest average excess turnaround time as it ensures that each proccess gets servived quickly. This brings the average down compared to other algorithms as it means those with the shortest execution time complete quickest.
+Round robin guarantees the lowest average excess turnaround time as it ensures that each process gets served quickly. This brings the average down compared to other algorithms as it means those with the shortest execution time complete quickest.
 
 b)i)
 Belady's MIN algorithm is to replace the page that has the longest wait time until it is next used.
 ii)
-It requires foreknowledge of the refernce string, which in some cases may only be evaluated through executing the instructions.
+It requires foreknowledge of the reference string, which in some cases may only be evaluated through executing the instructions.
 iii)
 LRU is the best for realistic systems for a number of reasons:
-  - It doesn't suffer from bedlays annomaly like FIFO, meaning that increasing the memory size, and subsequently ammount of frames available, decreases or keeps the same the amount of page faults.
-  - In it's worst case, LRU will suffer no more page faults than FIFO, which in turn is better, in it's worst case, than random selection.
-  - Whilst this algorithm is slightly slower in exectution time, the time saved by avoiding thrashing makes it more effiecent.
+  - It doesn't suffer from Belady's anomaly like FIFO, meaning that increasing the memory size, and subsequently amount of frames available, decreases or keeps the same the amount of page faults.
+  - In its worst case, LRU will suffer no more page faults than FIFO, which in turn is better, in it's worst case, than random selection.
+  - Whilst this algorithm is slightly slower in execution time, the time saved by avoiding thrashing makes it more efficient.

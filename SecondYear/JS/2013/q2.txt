@@ -120,4 +120,4 @@ d)public static void main(String[] args){
 		count ++;
 	}
 }
-e) It would be useful to have an exception to throw if the date in the currentFees or the payFees meathods were being given a date before the last paid. It would also be good to have one for attempting to pay fees in the PerUse class if there is no existing fees to pay.
+e) It would be useful to have an exception to throw if the date in the currentFees or the payFees methods were being given a date before the last paid. It would also be good to have one for attempting to pay fees in the PerUse class if there is no existing fees to pay.

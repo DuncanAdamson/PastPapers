@@ -1,5 +1,5 @@
 /*
-a) A critical section is a section of the code, particularly the variables within it, upon which only one thread can be allowed to opperate on at any given time.
+a) A critical section is a section of the code, particularly the variables within it, upon which only one thread can be allowed to operate on at any given time.
 */
 
 /*
@@ -46,4 +46,3 @@ public class MyQueueTS implements Queue{
 /*
 c) See q2c.c
 */
-

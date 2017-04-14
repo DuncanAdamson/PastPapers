@@ -1,8 +1,8 @@
-a)  N is nominal data types, meaning data that is just labels. For example : types of meat e.g. ham, bacon, beef etc.
+a)  N is nominal data types, meaning data that is just labels. For example: types of meat e.g. ham, bacon, beef etc.
     O is ordered data, for example, types of meet cut.
-    Q - Interval is qunatiative data where the 0 value is non-important, for example dates.
-    Q - Ratio is qunatative data where the 0 values is important, for example wieght.
-b)  Generalised Selection 
-c)  The advantage of this type of design is that it provides a good way for the visualisation of the relative size of data, this is particularly usefull when wanting to compare a number of different values, without having any ordering to the data.
-    The disadvantage of this is that the data is orgranised somewhat randomally, meaning that it may be difficuilt to compare the largest and second largest if they were to be placed considerably seperated.
-    An Alteratice for this would be to make a bar chart ordered from most medals too least, where the length of the bar represents the ammount of medals. This would have the advantage of allowing total medal counts to be easily visualy compared in order.
+    Q - Interval is quantitative data where the 0 value is non-important, for example dates.
+    Q - Ratio is quantitative data where the 0 values is important, for example weight.
+b)  Generalised Selection
+c)  The advantage of this type of design is that it provides a good way for the visualisation of the relative size of data, this is particularly useful when wanting to compare a number of different values, without having any ordering to the data.
+    The disadvantage of this is that the data is organised somewhat randomly, meaning that it may be difficult to compare the largest and second largest if they were to be placed considerably separated.
+    An Alternative for this would be to make a bar chart ordered from most medals too least, where the length of the bar represents the amount of medals. This would have the advantage of allowing total medal counts to be easily visually compared in order.

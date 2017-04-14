@@ -1,13 +1,12 @@
-a)  Syntatic analysis checks that the source program is well fromed and determines it pharse structure.
-    Contextual analysis checks that the source program as represented by an AST statisfies the source language's scope and type rules.
-    Code generation translate the source program as represented by an AST into equivelent object code.
-    The Syntactic analyser takes in the source program and returns an AST, the Contextual analyser takes the AST and checks it, the Code generater also takes the AST to generate the code.
+a)  Syntactic analysis checks that the source program is well formed and determines it phrase structure.
+    Contextual analysis checks that the source program as represented by an AST satisfies the source language's scope and type rules.
+    Code generation translate the source program as represented by an AST into equivalent object code.
+    The Syntactic analyser takes in the source program and returns an AST, the Contextual analyser takes the AST and checks it, the Code generator also takes the AST to generate the code.
 b)  NB This, and where possible following, question is answered with regards to ANTLR 4 as per Simons email.
-    Antlr uses the grammer file to generate a Lexer, Parser and Visitor. The Lexer and Parser work as a recusrive-decent parser for creating the AST, whilst the Visitor class is used to traverse the tree.
+    Antlr uses the grammar file to generate a Lexer, Parser and Visitor. The Lexer and Parser work as a recursive-decent parser for creating the AST, whilst the Visitor class is used to traverse the tree.
 c)  NA
 d)  NA
 e)  com : ....
         | ID ASSN PLUS expr
         | ....
         ;
-

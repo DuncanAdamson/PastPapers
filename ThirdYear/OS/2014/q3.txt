@@ -1,22 +1,22 @@
-a) i) The second possibility is more effiecent as it only has to preform the respective for loop opertation half as much as in the first one, saving a significant amount of opperations.
-  ii) As the default value for a non allocated float value is 0.0, the fastest way to initialize would be to not do anthing.
-    Alteritve:
+a) i) The second possibility is more efficient as it only has to perform the respective for loop operation half as much as in the first one, saving a significant amount of operations.
+  ii) As the default value for a non-allocated float value is 0.0, the fastest way to initialize would be to not do anything.
+    Alterative:
 for (k=0; k < (n + 1)/2; k ++){
     a[k].re = 0.0;
     a[n - 1 - k].re = 0.0;
     a[k].im = 0.0;
     a[n - 1 - k].im = 0.0;
 }
-Saves just under half of the operation involiving loops.
-b) There is not a deadlock as proccess P3 can complete, freeing the nessessary resources for P1 and P2. This can be shown by constring a reasource allocaion/request/available table
+Saves just under half of the operation involving loops.
+b) There is not a deadlock as process P3 can complete, freeing the necessary resources for P1 and P2. This can be shown by constructing a resource allocaion/request/available table
 
 Proccess | Allocation | Request | Available
 ---------|------------|---------|----------
-         | R1  R2     | R1  R2  | R1  R2  
+         | R1  R2     | R1  R2  | R1  R2
 P1       | 1   0      | 0   1   | 0   0
 P2       | 0   1      | 1   0   |
 P3       | 1   1      | 0   0   |
-From this we can see that proccess P3 has enough resources to satsify both requests, and is not requesting any itself, allowing it to complete
+From this we can see that process P3 has enough resources to satisfy both requests, and is not requesting any itself, allowing it to complete
 c) i) File header
   ii) File directory
  iii) File directory
@@ -26,4 +26,4 @@ c) i) File header
 d) i) This will make it slower as it would force the disk head to jump around the tracks to read, or preform any operations on the file.
   ii) This will make it faster as it allows the data in frequently accessed files to be loaded quickly
  iii) This would make it faster as it would save time in the disk head reach its destination quicker
-  iv) This may may make it faster as it would reduce seek time, however as it may require the disk to overide those files at the center it could also incerasse time overall.
+  iv) This may make it faster as it would reduce seek time, however as it may require the disk to override those files at the centre it could also increase time overall.

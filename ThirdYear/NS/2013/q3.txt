@@ -1,10 +1,10 @@
-a)  Best effort means that the network will try to deliver the packets, however, it makes no guarantees that they will reach, nor does guarentee the speed of delivery, that they will not be lost, delayed, reordered, duplicated or corrupted.
-    This impacts the transport layer as it requires protcols running over it as it requires them to provide some or all of what the network layer does not provide, such as congestion control, framing, ordering, reliability etc.
-b) IPv4 fragments packets that are larger than the maximium packet size, adding a fragment offset and fragment identifer, as well as a MF bit, set if more fragments follow the current one.
-    IPv6 does not support this as it is hard to implement for very high rate inks instead emphasising the End-to-End priciple, requiring the link layer to provide its own form of fragmination.
-    This was done to try and re-emphsise the idea of the end-to-end pricple, the idea that application specific functions should be handled in the end nodes, avoiding uneessesary overhead.
-c)  The pourpose of NAT is to increase the ammount of devices using a single IPv4 address. The reasons these are used on the internet are:
-    - IPv4 Addresses are exhaused, requiring ISPs to use NAT to add more users.
+a)  Best effort means that the network will try to deliver the packets, however, it makes no guarantees that they will reach, nor does guarantee the speed of delivery, that they will not be lost, delayed, reordered, duplicated or corrupted.
+    This impacts the transport layer as it requires protocols running over it as it requires them to provide some or all of what the network layer does not provide, such as congestion control, framing, ordering, reliability etc.
+b) IPv4 fragments packets that are larger than the maximum packet size, adding a fragment offset and fragment identifier, as well as a MF bit, set if more fragments follow the current one.
+    IPv6 does not support this as it is hard to implement for very high rate inks instead emphasising the End-to-End principle, requiring the link layer to provide its own form of fragmentation.
+    This was done to try and re-emphasise the idea of the end-to-end principle, the idea that application specific functions should be handled in the end nodes, avoiding unnecessary overhead.
+c)  The purpose of NAT is to increase the amount of devices using a single IPv4 address. The reasons these are used on the internet are:
+    - IPv4 Addresses are exhausted, requiring ISPs to use NAT to add more users.
     - IPv6 is not fully introduced, requiring IPv4 to still be utilised.
     - Users can use one address for all their devices, rather than having to buy one for each.
-    - Some devices use hard coded IPs requiring IPv4 to be supported for the forseable future
+    - Some devices use hard coded IPs requiring IPv4 to be supported for the foreseeable future

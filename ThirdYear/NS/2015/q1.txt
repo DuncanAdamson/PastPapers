@@ -1,22 +1,22 @@
-1a) The differnce between the two algrothims is the scope at which they 
-opperate, itra-domain opertates within a single autnomous system where as 
-inter-domain operates between networks. For example, an intra-domain routing 
-algorthim might opperate over one building, where as in interdomain algrithin 
+1a) The difference between the two algorithms is the scope at which they
+operate, itra-domain operates within a single autonomous system where as
+inter-domain operates between networks. For example, an intra-domain routing
+algorithm might operate over one building, where as in inter-domain algorithm
 is used in things such as the world wide web, connecting multiple AS.
 b) Each host stores a table of the distance to every other node in the network,
-as well as the next node in the path to that node. Periodically it exchanges 
-this information with it's nieghbours, allowing the shortest path to be worked 
+as well as the next node in the path to that node. Periodically it exchanges
+this information with its neighbours, allowing the shortest path to be worked
 out.
-c) In link state routing, every node has a complete map of the network 
-including the cost of travsel from each node to its nieghbours. This 
-calculation uses djistra's algorthim, taking O(n^2), making it slower than the 
+c) In link state routing, every node has a complete map of the network
+including the cost of travels from each node to its neighbours. This
+calculation uses Dijkstra’s algorithm, taking O(n^2), making it slower than the
 distance vector algorithm with is O(n).
-The Distance vector algorithm is also easier to implement, as it only needs to 
+The Distance vector algorithm is also easier to implement, as it only needs to
 update its table, not work out the shortest path.
-However, the link-state routing reaches the optimal solution after much less 
-information has be sent than Distance vector routing.
-d) The Gao-Rexford rules are to advertise all routes from coustmers to everyone
-, whilst only advertising routes from peers and provides to customers. These 
-are desiriable as it would make the shortest route one that routes through the 
-top level, rather than leaving the AS, and thus risking privacy being 
-compromised, as well as generally being more stable. 
+However, the link-state routing reaches the optimal solution after much less
+information has been sent than Distance vector routing.
+d) The Gao-Rexford rules are to advertise all routes from customers to everyone
+, whilst only advertising routes from peers and provides to customers. These
+are desirable as it would make the shortest route one that routes through the
+top level, rather than leaving the AS, and thus risking privacy being
+compromised, as well as generally being more stable.

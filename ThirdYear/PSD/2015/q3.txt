@@ -1,14 +1,14 @@
-a) test driven devlopment is a method of devlopment where the devloper devlops 
-a set of tests first, then writes the code for that section afterwards. 
-Behaviour driven is an extension of test driven develpoment where the tests are
-written in dommain speciffic language to convert structured natuaral langaue 
-into tests. Test driven devlopment is best for when trying to test very
-specific features such as edge cases, particulalry for aspects that may not be
-seen by users. BDD is better for testing that user stories are met and 
-foccousing on the end functionality of the software.
+a) test driven development is a method of development where the developer develops
+a set of tests first, then writes the code for that section afterwards.
+Behaviour driven is an extension of test driven development where the tests are
+written in domain specific language to convert structured natural language
+into tests. Test driven development is best for when trying to test very
+specific features such as edge cases, particularly for aspects that may not be
+seen by users. BDD is better for testing that user stories are met and
+focusing on the end functionality of the software.
 b)i)
 Given a buy order
-When the order is to be exectuted
+When the order is to be executed
 Then the order is completed
 And the items are given to the trader
 ii)
@@ -35,14 +35,14 @@ c) _________
                                                         |_________|
                                                           |
                       ____________________________________|
-                      |           |              
-                     / \         / \             
-                      O           O               
-                      |           |               
-                    __|_____    __|_____ 
+                      |           |
+                     / \         / \
+                      O           O
+                      |           |
+                    __|_____    __|_____
                    |Plugin A|  |Plugin B|
                    |________|  |________|
 d)
-This would exhibit the "inner platform effect", an anti pattern caused by 
-moving all implmentation descions into configutation, requiring the 
+This would exhibit the "inner platform effect", an anti-pattern caused by
+moving all implementation decisions into configuration, requiring the
 platform to be configured on top of an existing software system.

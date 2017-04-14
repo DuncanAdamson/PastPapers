@@ -1,13 +1,13 @@
 a)  The L1d cache is the smallest cache is the smallest cache and is closest to the registers. It stores the data most used by the CPU.
-    The L1i cache is the instruction cach and stores the next set of instructions needed by the CPU.
-b) Firstly the memory system translates the address from a virtual address into a physical address. If this address is not loaded into memory, the page it is in will be loaded. The value in memory is finally coppied into the register given.
+    The L1i cache is the instruction cache and stores the next set of instructions needed by the CPU.
+b) Firstly the memory system translates the address from a virtual address into a physical address. If this address is not loaded into memory, the page it is in will be loaded. The value in memory is finally copied into the register given.
 c) (t)r + (1-t)r/15 = 0.2r
     t + 1/15 + t/15 = 0.2
       14t/15 + 1/15 = 0.2
                 14t = 2
                   t = 1/7
 d)i) ((95 * 2) + (5*100)/100 = 690/100 = 6.9
- ii) ((95000 * 2) + (4999 * 100) + (10000))/10000 = (190000 + 
+ ii) ((95000 * 2) + (4999 * 100) + (10000))/10000 = (190000 +
                                                      499900 +
                                                       10000 ) / 100000
                                                   =  699900   / 100000

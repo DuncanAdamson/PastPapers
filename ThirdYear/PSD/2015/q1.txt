@@ -1,17 +1,17 @@
-a) The pourpose of the first clause is to specify what kind of users will be interested in that feature, the second clause is to specify what the user will be expecting to happen when using the system, and the third clause is to specify what kind of mindset the user will have doing this task.
-b)  - The user story is too long, user stories are meant to be 1 sencetnce, where as this is considerably more than that.
+a) The purpose of the first clause is to specify what kind of users will be interested in that feature, the second clause is to specify what the user will be expecting to happen when using the system, and the third clause is to specify what kind of mind set the user will have doing this task.
+b)  - The user story is too long, user stories are meant to be 1 sentence, whereas this is considerably more than that.
     - In the description the user isn't able to add new hills
     - The user story specifies tasks for multiple users, rather than just one
     - The user story encompasses several tasks for the user, when the story should only cover one
-    - Includes unessessary aditional information
+    - Includes unnecessary additional information
 c) As a hillwalker I want to share my experiences of a hill walk so that other hill walkers can go to good hills.
-   As a mountineer I want to make reports about my walks on mountians in different weather conditions so that other people can be prepared for them.
-   As a reader I want to be able to search through reports so that I can find ones relvent to me.
-   As a sports equipment store owner I want to be able to advertise to people hiking in my area so that I can sell them equipement
-   As a store owner I want too know when people are going for hill walks so that I know when to buy in hill walking equopment
+   As a mountaineer I want to make reports about my walks on mountains in different weather conditions so that other people can be prepared for them.
+   As a reader I want to be able to search through reports so that I can find ones relevant to me.
+   As a sports equipment store owner I want to be able to advertise to people hiking in my area so that I can sell them equipment
+   As a store owner I want to know when people are going for hill walks so that I know when to buy in hill walking equipment
 d) The first and third ones.
     1) - add an activity for making reports
-       - modify api for storing report dettails
-    3) - add an activity for generating querrys to the data set
-e) using planing poker to determaine how long it should take to do each task
-f) End the itteration there and preform the retrospective and begin planing the next itteration. I would do this because it would ensure that the current itteration is completed properly, rather than adding new tasks which may not be finished on time to it.
+       - modify api for storing report details
+    3) - add an activity for generating quarries to the data set
+e) using planning poker to determine how long it should take to do each task
+f) End the iteration there and preform the retrospective and begin planning the next iteration. I would do this because it would ensure that the current iteration is completed properly, rather than adding new tasks which may not be finished on time to it.
